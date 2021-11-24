@@ -1,0 +1,174 @@
+
+/* style for all */
+
+html{
+    background-color: #E3E3E3;
+}
+header{
+    background-color: grey;
+    width: 100%;
+    
+}
+h1{
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Abril Fatface', serif;
+}
+
+
+
+ul{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#links{
+    padding: 15px;
+}
+.page_links{
+    font-family: 'Abril Fatface', serif;
+    display: flex;
+    justify-content: space-between;
+    /* space between not working*/
+}
+
+
+
+/* styling for index.html */
+
+/* is skip working? */
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+
+a.skip:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+  }
+
+
+
+.class-for-index img{
+    display:flex;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+a, a:visited{
+    color: black;
+}
+
+#current{
+    text-transform: uppercase;
+    background-color: white;
+}
+
+/* for index.html:
+ - need to center image
+ - make whole page fit
+ - background image not covering
+  */
+
+
+  /* styling for family.html */
+
+.class-for-family, .pictures{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.class-for-family img{
+    border: 10px solid black;
+    margin: 10px;
+    width: 300px; 
+}
+
+  /* styling for experiences.html */
+  .header-for-experiences{
+    text-align: left;
+    padding: 25px 0px 0px 25px;
+    font-size: 40px;
+    font-family: 'Abril Fatface', serif;  
+}
+
+    .p-for-experiences{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    line-height: 2;
+    text-indent: 50px;
+
+
+    }
+
+  /* USE GRID HERE */
+.umich_container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    line-height: 2;
+    text-indent: 50px;
+    padding:10px;
+}
+
+.umich_container img{
+    width: 100%;
+    height: 80%; 
+}
+
+/* styling for aboutme.html */
+.aboutme_paragraphs{
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    font-size: 30px;
+    line-height: 2;
+    text-indent: 50px;
+    }
+
+.aboutme_paragraphs img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 20px;
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: left;
+    font-family: 'Roboto';
+}
+
+/* tablet view */
+@media screen and (min-width: 800px){
+    .umich_container{
+        grid-template-columns: 1fr 1fr;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content:space-evenly;
+        line-height: 1.5em;
+    }
+    
+}
